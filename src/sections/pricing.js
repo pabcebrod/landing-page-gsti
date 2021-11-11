@@ -159,8 +159,8 @@ const Pricing = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Pricing plan"
-          title="What deal suit you perfect"
+          slogan="Planes de suscripcion"
+        /*   title="What deal suit you perfect" */
         />
         <Flex sx={styles.priceSwitcher}>
           <Button
@@ -168,14 +168,14 @@ const Pricing = () => {
             className={plan?.active === 'monthly' ? 'active' : ''}
             onClick={() => handlePlan('monthly')}
           >
-            Monthly Plan
+            Plan mensual
           </Button>
           <Button
             variant="text"
             className={plan?.active === 'yearly' ? 'active' : ''}
             onClick={() => handlePlan('yearly')}
           >
-            Annual Plan
+            Plan anual
           </Button>
         </Flex>
         <Grid sx={styles.grid}>

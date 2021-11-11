@@ -8,17 +8,17 @@ const navItems = [
   {
     id: 1,
     link: '#!',
-    title: 'Home',
+    title: 'Inicio',
   },
   {
     id: 2,
     link: '#!',
-    title: 'Advertise',
+    title: 'Anuncio',
   },
   {
     id: 3,
     link: '#!',
-    title: 'Supports',
+    title: 'Soporte',
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             <Logo white />
             <Text as="span">
-              All right reserved - Design &amp; Developed by RedQ, Inc
+             Todos los derechos reservados -  X
             </Text>
           </Flex>
 

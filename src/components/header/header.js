@@ -50,9 +50,9 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Button sx={styles.joinNow} variant="primaryMd">
-                  Join us now
-                </Button>
+                <div sx={styles.joinNow} variant="primaryMd">
+                 {/*  Join us now */}
+                </div>
               </Flex>
 
               {mobileMenu ? (

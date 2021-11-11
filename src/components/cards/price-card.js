@@ -41,11 +41,11 @@ const PriceCard = ({ price }) => {
       <Box as="footer" className="priceAmount" sx={styles.footer}>
         <Box>
           <Text as="span" className="price-label">
-            Starting from
+          Precio
           </Text>
           <Text as="span" className="price-value">
             {price?.amount?.toFixed(2)}
-            /mo
+            €
           </Text>
         </Box>
         <BsArrowRightShort

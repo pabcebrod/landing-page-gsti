@@ -14,15 +14,15 @@ const Subscription = () => {
         <Box sx={styles.content}>
           <SectionHeading
             sx={styles.heading}
-            title="Subscribe to get best offers."
-            description="By subscribing with your mail, you will agree with terms"
+            title="Suscribete para tener las mejores ofertas"
+            description="Suscribiendote con tu email aceptaras todos los terminos"
           />
           <Flex as="form" sx={styles.form} onSubmit={handleSubmit}>
             <Box as="label" htmlFor="email" variant="styles.srOnly">
               Email
             </Box>
-            <Input type="email" id="email" placeholder="Enter your email" />
-            <Button variant="white">Subscribe us</Button>
+            <Input type="email" id="email" placeholder="Introduce tu email" />
+            <Button variant="white">Suscribete</Button>
           </Flex>
         </Box>
       </Container>

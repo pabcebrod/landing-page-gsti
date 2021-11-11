@@ -14,13 +14,11 @@ export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Startup Landing 007" />
+      
       <Banner />
-      <Clients />
+     
       <FeaturedSpace />
-      <Gallery />
       <Pricing />
-      <OurCustomer />
-      <Blog />
       <Subscription />
     </Layout>
   );

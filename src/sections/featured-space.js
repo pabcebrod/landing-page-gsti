@@ -110,8 +110,8 @@ const FeaturedSpace = () => {
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Some good place to where can build your startup business"
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="Una buena forma de atraer clientes a tu local"
+              description="X facilita la atención al cliente, permitiendo a los camareros centrarse en tareas de servir y recoger de las mesas."
             />
             <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (
@@ -119,14 +119,14 @@ const FeaturedSpace = () => {
               ))}
             </Box>
           </Box>
-          <Box sx={styles.rightContent}>
+         {/*  <Box sx={styles.rightContent}>
             <Progressbar
               sx={styles.progressbar}
               togglePlay={togglePlay}
               handleClick={handleToggle}
               currentWidth={currentWidth}
             />
-            <Swiper
+            {/* <Swiper
               loop={true}
               effect="fade"
               ref={swiperRef}
@@ -147,8 +147,8 @@ const FeaturedSpace = () => {
                   </Box>
                 </SwiperSlide>
               ))}
-            </Swiper>
-          </Box>
+            </Swiper> 
+          </Box> */}
         </Box>
       </Container>
     </Box>
