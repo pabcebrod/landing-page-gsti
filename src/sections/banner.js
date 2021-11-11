@@ -3,7 +3,7 @@ import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
 import { rgba } from 'polished';
 
 import Select from 'components/select';
-import bannerBg from 'assets/images/banner-bg.jpg';
+import bannerBg from 'assets/images/imagen-bar.jpg';
 import mapMarker from 'assets/images/icons/map-marker.png';
 
 const options = [
@@ -39,7 +39,7 @@ export default function Banner() {
     <Box as="section" id="home" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.bannerContent}>
+         {/*  <Box sx={styles.bannerContent}>
             <Heading as="h1" sx={styles.heroTitle}>
               Coworking space that will feel like home.
             </Heading>
@@ -66,7 +66,7 @@ export default function Banner() {
                 Subscribe
               </Button>
             </Box>
-          </Box>
+          </Box> */}
         </Box>
       </Container>
     </Box>
