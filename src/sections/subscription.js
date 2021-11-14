@@ -23,6 +23,9 @@ const Subscription = () => {
             </Box>
             <Input type="email" id="email" placeholder="Introduce tu email" />
             <button onclick="gtag('event', 'Suscripcion', {'event_category': 'Suscripcion', 'event_label': 'Suscripcion'})">Suscribete</button>
+            <button onclick="ga('send', 'event', 'Suscripcion2', 'Suscripcion2', 'Suscripcion2', Suscripcion2);">Suscribete2</button>
+
+            
             {/* <Button  variant="white">Suscribete</Button> */}
           </Flex>
         </Box>
