@@ -1,29 +1,14 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Container, Input } from 'theme-ui';
+import { jsx, Box, Flex, Container, Input , Button } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { rgba } from 'polished';
 
 const Subscription = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(`Submitted...`);
-
-    ga('send', 'event', {
-      eventCategory: 'Suscripcion',
-      eventAction: 'Suscripcion',
-    });
   };
-
-  /* const handleCLick = (e) => {
-    e.preventDefault();
-    console.log(`Submitted...`);
-
-    ga('send', 'event', {
-      eventCategory: 'Suscripcion',
-      eventAction: 'Suscripcion',
-    });
-  }; */
-
   
   return (
     <Box as="section" id="contact"  sx={styles.section}>
@@ -39,9 +24,24 @@ const Subscription = () => {
               Email
             </Box>
             <Input type="email" id="email" placeholder="Introduce tu email" />
-            {/* <button onclick="gtag('event', 'Suscripcion', {'event_category': 'Suscripcion'})">Suscribete</button>
-            <button onclick={handleClick}>Suscribete2</button> */}
-            <Button  variant="white">Suscribete</Button> 
+            <button
+      onClick={e => {
+        // To stop the page reloading
+        e.preventDefault()
+        // Lets track that custom click
+        trackCustomEvent({
+          // string - required - The object that was interacted with (e.g.video)
+          category: "Suscribete",
+          // string - required - Type of interaction (e.g. 'play')
+          action: "Suscribete",
+        })
+        
+      }}
+    >
+      Suscribete
+    </button>
+           
+          {/*   <Button  variant="white">Suscribete</Button>  */}
           </Flex>
         </Box>
       </Container>
