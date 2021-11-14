@@ -22,7 +22,7 @@ const Subscription = () => {
               Email
             </Box>
             <Input type="email" id="email" placeholder="Introduce tu email" />
-            <button onclick="gtag('event', 'Suscripcion', {'event_category': '', 'event_label': ''})">Suscribete</button>
+            <button onclick="gtag('event', 'Suscripcion', {'event_category': 'Suscripcion', 'event_label': 'Suscripcion'})">Suscribete</button>
             {/* <Button  variant="white">Suscribete</Button> */}
           </Flex>
         </Box>
