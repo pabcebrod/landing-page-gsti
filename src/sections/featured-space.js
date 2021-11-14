@@ -22,7 +22,7 @@ SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
 const data = {
   feature: [
-    {
+    /* {
       id: 1,
       icon: expand,
       title: '1000 ft2',
@@ -39,7 +39,7 @@ const data = {
       icon: wifi,
       title: '100 mbps',
       description: 'Internet speed is much better than others.',
-    },
+    }, */
   ],
   gallery: [
     {
@@ -113,7 +113,7 @@ const FeaturedSpace = () => {
             <SectionHeading
               sx={styles.heading}
               title="Una buena forma de atraer clientes a tu local"
-              description="X facilita la atención al cliente, permitiendo a los camareros centrarse en tareas de servir y recoger de las mesas."
+              description="Easy Order facilita la atención al cliente, permitiendo a los camareros centrarse en tareas de servir y recoger las mesas."
             />
             <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (

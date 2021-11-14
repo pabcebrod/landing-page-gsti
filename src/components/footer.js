@@ -40,7 +40,7 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             {/* <Logo white /> */}
             <Text as="span">
-             Todos los derechos reservados -  X
+             Todos los derechos reservados -  Easy Order
             </Text>
           </Flex>
 

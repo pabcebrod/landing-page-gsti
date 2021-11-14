@@ -13,7 +13,7 @@ import Subscription from 'sections/subscription';
 export default function IndexPage() {
   return (
     <Layout>
-      <SEO title="Startup Landing 007" />
+      <SEO title="Easy order" />
       
       {/* <Banner /> */}
      
