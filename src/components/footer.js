@@ -38,7 +38,7 @@ export default function Footer() {
       <Container sx={styles.container}>
         <Flex sx={styles.content}>
           <Flex sx={styles.copyright}>
-            <Logo white />
+            {/* <Logo white /> */}
             <Text as="span">
              Todos los derechos reservados -  X
             </Text>

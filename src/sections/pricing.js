@@ -5,12 +5,13 @@ import SectionHeading from 'components/section-heading';
 import PriceCard from 'components/cards/price-card';
 import { rgba } from 'polished';
 import { keyframes } from '@emotion/core';
+import '../assets/css/price.css';
 
 import userIcon from 'assets/images/icons/two-users.png';
 import userIcon2 from 'assets/images/icons/three-users.png';
 
 const monthlyPricing = [
-  {
+ /*  {
     id: 1,
     icon: userIcon,
     title: 'Starter Pack',
@@ -38,13 +39,13 @@ const monthlyPricing = [
         title: `Unlimited download of courses on the mobile app contents`,
       },
     ],
-  },
+  }, */
   {
     id: 2,
     icon: userIcon2,
-    title: 'Family Pack',
+    title: 'Pack Mensual Estandard',
     amount: 89.99,
-    isRecommended: true,
+    isRecommended: false,
     features: [
       {
         id: 1,
@@ -71,7 +72,7 @@ const monthlyPricing = [
 ];
 
 const annualPricing = [
-  {
+  /* {
     id: 1,
     icon: userIcon,
     title: 'Starter Pack',
@@ -99,11 +100,11 @@ const annualPricing = [
         title: `Unlimited download of courses on the mobile app contents`,
       },
     ],
-  },
+  }, */
   {
     id: 2,
     icon: userIcon2,
-    title: 'Family Pack',
+    title: 'Pack Anual Estandard',
     amount: 89.99 * 12 - 10,
     isRecommended: true,
     features: [
@@ -178,11 +179,13 @@ const Pricing = () => {
             Plan anual
           </Button>
         </Flex>
-        <Grid sx={styles.grid}>
+        <div className="container"> 
+        <Grid sx={styles.grid} text-align="CENTER">
           {plan?.data?.map((price, index) => (
             <PriceCard price={price} key={`${plan.active}-${index}`} />
           ))}
         </Grid>
+        </div>
       </Container>
     </Box>
   );
@@ -245,7 +248,7 @@ const styles = {
   },
   grid: {
     gap: ['60px 30px'],
-    display: 'grid',
+    display: 'flex',
     gridTemplateColumns: [
       'repeat(1, 1fr)',
       'repeat(1, 1fr)',

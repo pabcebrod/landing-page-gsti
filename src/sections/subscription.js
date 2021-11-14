@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Container, Input, Button } from 'theme-ui';
+import { jsx, Box, Flex, Container, Input } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import { rgba } from 'polished';
 
@@ -9,7 +9,7 @@ const Subscription = () => {
     console.log(`Submitted...`);
   };
   return (
-    <Box as="section" sx={styles.section}>
+    <Box as="section" id="contact"  sx={styles.section}>
       <Container>
         <Box sx={styles.content}>
           <SectionHeading
@@ -22,7 +22,8 @@ const Subscription = () => {
               Email
             </Box>
             <Input type="email" id="email" placeholder="Introduce tu email" />
-            <Button variant="white">Suscribete</Button>
+            <button onclick="gtag('event', 'Suscripcion', {'event_category': '', 'event_label': ''})">Suscribete</button>
+            {/* <Button  variant="white">Suscribete</Button> */}
           </Flex>
         </Box>
       </Container>

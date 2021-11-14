@@ -15,7 +15,7 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Startup Landing 007" />
       
-      <Banner />
+      {/* <Banner /> */}
      
       <FeaturedSpace />
       <Pricing />

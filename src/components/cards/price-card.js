@@ -61,9 +61,23 @@ export default PriceCard;
 
 const styles = {
   priceTable: {
-    backgroundColor: '#020718',
+    backgroundColor: '#fff',
+      borderColor: '#F0F0F5',
+      color: 'text',
+      footer: {
+        backgroundColor: '#F0F0F5',
+        borderRadius: '0 0 10px 10px',
+        '.price-label': {
+          color: 'text',
+        },
+        '.price-value': {
+          color: 'primary',
+        },
+        '> div, svg': {
+          cursor: 'pointer',
+        },
+      },
     border: `1px solid ${rgba('#F3F4F5', 0.15)}`,
-    color: '#fff',
     borderRadius: 10,
     position: 'relative',
     '&.recommended': {

@@ -10,6 +10,7 @@ import users from 'assets/images/icons/users.png';
 import wifi from 'assets/images/icons/wifi.png';
 import slider1 from 'assets/images/features/1.png';
 import slider2 from 'assets/images/features/2.png';
+import 'assets/css/price.css';
 import slider3 from 'assets/images/features/3.png';
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
@@ -104,10 +105,11 @@ const FeaturedSpace = () => {
   };
 
   return (
-    <Box id="feature" as="section" sx={styles.section}>
-      <Container>
+    <div className="container">
+    <Box  className="container" id="feature" as="section" sx={styles.section}>
+      <Container className="container">
         <Box sx={styles.contentWrapper}>
-          <Box sx={styles.leftContent}>
+          <Box sx={styles.leftContent} >
             <SectionHeading
               sx={styles.heading}
               title="Una buena forma de atraer clientes a tu local"
@@ -152,6 +154,7 @@ const FeaturedSpace = () => {
         </Box>
       </Container>
     </Box>
+    </div>
   );
 };
 
@@ -164,7 +167,7 @@ const styles = {
   },
   contentWrapper: {
     gap: [0, 0, 0, 0, '30px'],
-    display: ['flex', null, null, null, 'grid'],
+    display: ['flex', null, null, null],
     alignItems: 'center',
     flexDirection: ['column', null, null, null, null],
     gridTemplateColumns: ['unset', null, null, null, 'repeat(2,1fr)'],
@@ -188,7 +191,7 @@ const styles = {
   },
   featureWrapper: {
     gap: ['40px 20px', null, null, null, '30px'],
-    display: 'grid',
+    display: 'flex',
     gridTemplateColumns: [
       'repeat(2,1fr)',
       null,

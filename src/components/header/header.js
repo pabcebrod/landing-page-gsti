@@ -28,7 +28,7 @@ export default function Header() {
         >
           <Container>
             <Box sx={styles.headerInner}>
-              <Logo />
+              {/* <Logo /> */}
 
               <Flex
                 as="nav"
@@ -72,7 +72,11 @@ export default function Header() {
 
 const styles = {
   headerWrapper: {
-    backgroundColor: 'transparent',
+    header: {
+      backgroundColor: '#fff',
+      boxShadow: '0 6px 13px rgba(38, 78, 118, 0.1)',
+      py: [10],
+    },
     '.is-sticky': {
       header: {
         backgroundColor: '#fff',
