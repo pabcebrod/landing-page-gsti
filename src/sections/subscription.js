@@ -13,6 +13,18 @@ const Subscription = () => {
       eventAction: 'Suscripcion',
     });
   };
+
+  /* const handleCLick = (e) => {
+    e.preventDefault();
+    console.log(`Submitted...`);
+
+    ga('send', 'event', {
+      eventCategory: 'Suscripcion',
+      eventAction: 'Suscripcion',
+    });
+  }; */
+
+  
   return (
     <Box as="section" id="contact"  sx={styles.section}>
       <Container>
@@ -27,9 +39,9 @@ const Subscription = () => {
               Email
             </Box>
             <Input type="email" id="email" placeholder="Introduce tu email" />
-            <button onclick="gtag('event', 'Suscripcion', {'event_category': 'Suscripcion'})">Suscribete</button>
-            <button onclick="ga('send', 'event', 'Suscripcion2', 'Suscripcion2');">Suscribete2</button>
-            {/* <Button  variant="white">Suscribete</Button> */}
+            {/* <button onclick="gtag('event', 'Suscripcion', {'event_category': 'Suscripcion'})">Suscribete</button>
+            <button onclick={handleClick}>Suscribete2</button> */}
+            <Button  variant="white">Suscribete</Button> 
           </Flex>
         </Box>
       </Container>
