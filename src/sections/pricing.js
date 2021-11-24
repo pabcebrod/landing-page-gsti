@@ -69,6 +69,11 @@ const monthlyPricing = [
       },
       {
         id: 4,
+        isAvailable: true,
+        title: `1 mes de prueba gratuita`,
+      },
+      {
+        id: 4,
         isAvailable: false,
         title: `Descuento del 5%`,
       },
@@ -132,6 +137,11 @@ const annualPricing = [
         id: 4,
         isAvailable: true,
         title: `Soporte via web premium`,
+      },
+      {
+        id: 4,
+        isAvailable: true,
+        title: `1 mes de prueba gratuita`,
       },
       {
         id: 4,

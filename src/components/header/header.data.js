@@ -3,6 +3,10 @@ export default [
     path: 'feature',
     label: 'Inicio',
   },
+  {
+    path: 'funcionalidad',
+    label: 'Funcionalidad',
+  },
 /*   {
     path: 'clients',
     label: 'Clients',

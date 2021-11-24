@@ -29,7 +29,7 @@ const styles = {
   },
   slogan: {
     color: (theme) => theme.colors.primary,
-    fontSize: 18,
+    fontSize: 36,
     fontWeight: 700,
     lineHeight: 2.22,
   },

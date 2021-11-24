@@ -39,36 +39,9 @@ export default function Banner() {
     <Box as="section" id="home" sx={styles.section}>
       <Container>
         <Box sx={styles.contentWrapper}>
-         {/*  <Box sx={styles.bannerContent}>
-            <Heading as="h1" sx={styles.heroTitle}>
-              Coworking space that will feel like home.
-            </Heading>
-            <Text as="p" sx={styles.desc}>
-              Whether you’re an established enterprise or a growing startup,
-              discover spaces that inspire which will best your most impactful
-              work.
-            </Text>
-            <Box as="form" onSubmit={handleSubmit}>
-              <Select
-                id="location"
-                label="Find workplace"
-                defaultValue={options[1].label}
-                sx={styles.select}
-                icon={mapMarker}
-              >
-                {options?.map((option) => (
-                  <option value={option.value} key={option.id}>
-                    {option.label}
-                  </option>
-                ))}
-              </Select>
-              <Button type="submit" sx={styles.button} variant="primary">
-                Subscribe
-              </Button>
-            </Box>
-          </Box> */}
+         
         </Box>
-      </Container>
+      </Container> 
     </Box>
   );
 }

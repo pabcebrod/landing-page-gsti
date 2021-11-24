@@ -185,8 +185,9 @@ const styles = {
       fontWeight: [500, null, null, 400],
     },
     p: {
-      fontSize: ['15px', null, null, '17px'],
+      fontSize: ['15px', null, null, '24px'],
       mt: [3, 3, 3, 5],
+      fontWeight:'bold',
     },
   },
   featureWrapper: {

@@ -4,6 +4,7 @@ import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import Clients from 'sections/clients';
 import FeaturedSpace from 'sections/featured-space';
+import UseCase from 'sections/use-case';
 import OurCustomer from 'sections/our-customer';
 import Gallery from 'sections/gallery';
 import Pricing from 'sections/pricing';
@@ -15,9 +16,9 @@ export default function IndexPage() {
     <Layout>
       <SEO title="Easy order" />
       
-      {/* <Banner /> */}
-     
-      <FeaturedSpace />
+     <Banner /> 
+     <FeaturedSpace />
+      <UseCase />
       <Pricing />
       <Subscription />
     </Layout>
