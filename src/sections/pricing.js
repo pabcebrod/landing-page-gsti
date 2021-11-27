@@ -70,12 +70,17 @@ const monthlyPricing = [
       {
         id: 4,
         isAvailable: true,
-        title: `1 mes de prueba gratuita`,
+        title: `1 mes de prueba gratuito`,
       },
       {
         id: 4,
         isAvailable: false,
         title: `Descuento del 5%`,
+      },
+      {
+        id: 4,
+        isAvailable: true,
+        title: `Códigos de decuentos por recomendación`,
       },
     ],
   },
@@ -141,7 +146,17 @@ const annualPricing = [
       {
         id: 4,
         isAvailable: true,
-        title: `1 mes de prueba gratuita`,
+        title: `1 mes de prueba gratuito`,
+      },
+      {
+        id: 4,
+        isAvailable: true,
+        title: `Códigos de decuentos por recomendación`,
+      },
+      {
+        id: 4,
+        isAvailable: true,
+        title: `Personaliza el espacio de tu establecimiento totalmente gratis`,
       },
       {
         id: 4,
