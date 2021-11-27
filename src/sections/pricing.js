@@ -74,11 +74,6 @@ const monthlyPricing = [
       },
       {
         id: 4,
-        isAvailable: false,
-        title: `Descuento del 5%`,
-      },
-      {
-        id: 4,
         isAvailable: true,
         title: `Códigos de decuentos por recomendación`,
       },
@@ -169,8 +164,8 @@ const annualPricing = [
 
 const Pricing = () => {
   const [plan, setPlan] = useState({
-    active: 'monthly',
-    data: monthlyPricing,
+    active: 'yearly',
+    data: annualPricing,
   });
 
   const handlePlan = (plan) => {
