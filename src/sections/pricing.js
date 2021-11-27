@@ -151,7 +151,7 @@ const annualPricing = [
       {
         id: 4,
         isAvailable: true,
-        title: `Códigos de decuentos por recomendación`,
+        title: `Códigos de descuentos por recomendación`,
       },
       {
         id: 4,
